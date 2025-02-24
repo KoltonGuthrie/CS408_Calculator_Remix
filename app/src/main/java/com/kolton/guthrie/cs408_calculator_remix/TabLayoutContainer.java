@@ -43,7 +43,7 @@ public class TabLayoutContainer extends Fragment {
                     tab.setText("Tip");
                     break;
                 case 2:
-                    tab.setText("Tax");
+                    tab.setText("Distance");
                     break;
             }
         }).attach();

@@ -39,7 +39,7 @@ public class TabLayoutFragment extends Fragment {
                 setupSumCalculator();
                 break;
             case 3:
-                setupTaxCalculator();
+                setupDistanceCalculator();
                 break;
         }
     }
@@ -52,7 +52,7 @@ public class TabLayoutFragment extends Fragment {
     }
 
     // Tab 2: Tax Calculator
-    private void setupTaxCalculator() {
+    private void setupDistanceCalculator() {
         View view = getLayoutInflater().inflate(R.layout.fragment_distance_calculator, null);
         binding.linearLayout.addView(view);
         new DistanceCalculator();
