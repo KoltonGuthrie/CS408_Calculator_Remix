@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CS408_Calculator_Remix</string>
+    <string name="celsius_message">Celsius:</string>
+    <string name="convert_message">Convert</string>
+    <string name="fahrenheit_message">Fahrenheit:</string>
+    <string name="total_bill_message">Bill Total:</string>
+    <string name="tip_message">Tip Percentage:</string>
+    <string name="num_people_message">Number of People:</string>
+    <string name="calculate_message">Calculate</string>
+    <string name="total_per_person_message">Total Per Person:</string>
+    <string name="empty_inputs_error">Inputs cannot be empty!</string>
+    <string name="non_numeric_inputs_error">Inputs must be numeric!</string>
+    <string name="kilometers_message">Kilometers:</string>
+    <string name="miles_message">Miles:</string>
+</resources>
