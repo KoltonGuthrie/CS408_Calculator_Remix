@@ -20,7 +20,6 @@ public class TabLayoutFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        // Inflate the layout using view binding
         binding = TabFragmentBinding.inflate(getLayoutInflater(), container, false);
         return binding.getRoot();
     }
@@ -30,7 +29,6 @@ public class TabLayoutFragment extends Fragment {
         Bundle args = getArguments();
         int id = args.getInt(ARG_ID);
 
-        // Add logic for each tab
         switch (id) {
             case 1:
                 setupTemperatureConverter();
@@ -44,21 +42,18 @@ public class TabLayoutFragment extends Fragment {
         }
     }
 
-    // Tab 1: Temperature Converter
     private void setupTemperatureConverter() {
         View view = getLayoutInflater().inflate(R.layout.fragment_temperature_converter, null);
         binding.linearLayout.addView(view);
         new TemperatureConverter();
     }
 
-    // Tab 2: Tax Calculator
     private void setupDistanceCalculator() {
         View view = getLayoutInflater().inflate(R.layout.fragment_distance_calculator, null);
         binding.linearLayout.addView(view);
         new DistanceCalculator();
     }
 
-    // Tab 3: Sum Calculator
     private void setupSumCalculator() {
         View view = getLayoutInflater().inflate(R.layout.fragment_tip_calculator, null);
         binding.linearLayout.addView(view);
